@@ -37,7 +37,7 @@ void displayMenu() {
 int getChoice() {
     int choice;
     scanf("%d", &choice);
-    getchar();  // Clear newline character
+    getchar();  
     return choice;
 }
 
