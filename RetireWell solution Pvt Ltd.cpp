@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// Function declarations
 void welcome();
 void UserInfo(char name[], char gender[], char profession[]);
 void displayMenu();
@@ -46,14 +45,14 @@ void SavingsRequired() {
     int crage, rrage, mntlygn, ytr, yrsret;
     float avgmf = 76.00, ifl = 0.03, fi, fa, retcor, reqsav, erf, annsav, monsav, loan;
 
-    float stocks, mutual, estate, gold, fd; // Variables for investment breakdown
+    float stocks, mutual, estate, gold, fd; 
 
     printf("\n Enter your current age: ");
     scanf("%d", &crage);
     printf("\n Enter your retirement age: ");
     scanf("%d", &rrage);
 
-    if (rrage >= avgmf || rrage <= crage) {
+    if (rrage>=avgmf||rrage<=crage) {
         printf("\n Invalid retirement age. Please ensure it is less than life expectancy and greater than your current age.\n");
         return;
     }
@@ -74,7 +73,7 @@ void SavingsRequired() {
     annsav = reqsav / ytr;
     monsav = annsav / 12;
 
-    float monthlySavings = monsav; // Use the calculated monthly savings for investment breakdown
+    float monthlySavings = monsav; 
     stocks = monthlySavings * 0.35;
     mutual = monthlySavings * 0.20;
     estate = monthlySavings * 0.15;
