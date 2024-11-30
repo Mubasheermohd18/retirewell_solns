@@ -101,7 +101,6 @@ void SavingsForGoal() {
     int crage, rrage;
     float slry, erf, loan, save, mfund, yfund;
     float avgmf = 76.00, ifl = 0.03;
-
     float stocks, mutual, estate, gold, fd;
 
     printf("\n\n Enter your current age: ");
