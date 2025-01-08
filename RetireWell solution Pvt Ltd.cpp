@@ -1,6 +1,5 @@
-#include <stdio.h>
-#include <math.h>
-
+#include<stdio.h>
+#include<math.h>
 void welcome();
 void UserInfo(char name[], char gender[], char profession[]);
 void displayMenu();
@@ -12,8 +11,8 @@ void summary(float slry, int rrage, int crage, float yfund, float avgmf, float i
 
 void welcome() {
     printf("\n*********************************");
-    printf("\n         WELCOME!!!!!!!!");
-    printf("\n      RetireWell Solutions");
+    printf("\n*         WELCOME!!!!!!!!       *");
+    printf("\n*      RetireWell Solutions     *");
     printf("\n*********************************");
     printf("\n Press Enter to continue.........");
     getchar();
@@ -56,14 +55,12 @@ void SavingsRequired() {
         printf("\n Invalid retirement age. Please ensure it is less than life expectancy and greater than your current age.\n");
         return;
     }
-
     printf("\n Enter income required per month after your retirement: ");
     scanf("%d", &mntlygn);
     printf("\n Enter your existing retirement fund: ");
     scanf("%f", &erf);
     printf("\n Please enter the existing debt or loans: ");
     scanf("%f", &loan);
-
     ytr = rrage - crage;
     fi = mntlygn * pow((1 + ifl), ytr);
     fa = mntlygn * 12;
